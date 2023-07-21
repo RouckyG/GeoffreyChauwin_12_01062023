@@ -1,0 +1,31 @@
+
+.keyData {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .dataIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 6px;
+  }
+  
+  .dataDetails {
+    display: block;
+  }
+  
+  .dataDetails h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .dataDetails p {
+    font-size: 12px;
+    margin: 0;
+  }
