@@ -17,8 +17,8 @@ root.render(
         <TopNavBar/>
         <Routes>
           <Route exact path="/" element={<Dashboard />}/>
-          {/* <Route path="/user/:id" element={<FetchUserData />}/>
-          <Route exact path="/*" element={<Error />}/> */}
+          <Route path="/user/:id" element={<FetchUserData />}/>
+          {/* <Route exact path="/*" element={<Error />}/> */}
         </Routes>
     </Router>
   </React.StrictMode>

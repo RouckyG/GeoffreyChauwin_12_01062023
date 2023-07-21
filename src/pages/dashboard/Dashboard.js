@@ -24,7 +24,7 @@ const Dashboard = (props) => {
             <div className="charts">
                 <div className="leftCharts">
                     <ActivityChart data={userData.activities}/>
-                    {/* <SessionChart data={userData.sessions}/> */}
+                    <SessionChart data={userData.sessions}/>
                     <PerformanceChart data={userData.performance}/>
                     <ScoreChart value={userData.main.score}/>
                 </div>

@@ -1,0 +1,64 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: 15px;
+    padding: 0 20px;
+    flex-grow: 1; 
+  }
+  
+  .dashboard h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+  }
+  
+  .dashboard h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .welcomeMessage {
+    margin-bottom: 10px;
+  }
+  
+  .userName {
+    color: #FF0101;
+  }
+  
+  .charts {
+    display: grid;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    gap: 15px;
+  }
+  
+  .charts section {
+    border-radius: 5px;
+    background-color: #FBFBFB;
+  }
+  
+  .leftCharts {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 57% 40%;
+    gap: 18px;
+  }
+  
+  .dailyActivities {
+    grid-column: 1/4;
+  }
+  
+  .mainData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+  }
+  
+  .mainData section {
+    flex-grow: 1;
+  }
+  
