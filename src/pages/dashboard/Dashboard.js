@@ -25,8 +25,8 @@ const Dashboard = (props) => {
                 <div className="leftCharts">
                     <ActivityChart data={userData.activities}/>
                     {/* <SessionChart data={userData.sessions}/> */}
-                    {/* <PerformanceChart data={userData.performance}/> */}
-                    {/* <ScoreChart value={userData.main.score}/> */}
+                    <PerformanceChart data={userData.performance}/>
+                    <ScoreChart value={userData.main.score}/>
                 </div>
                 <div className="mainData">
                     <KeyData title="Calories" value={userData.main.keyData.calorieCount} icon={calorieIcon} color="#FF0000" />
