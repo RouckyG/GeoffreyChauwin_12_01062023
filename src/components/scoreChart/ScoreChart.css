@@ -1,0 +1,15 @@
+.scoreTitle {
+    position: relative;
+    margin: 0;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .scoreChart {
+    position: relative;
+    top: -15px;
+    height: 100%;
+  }
+  
