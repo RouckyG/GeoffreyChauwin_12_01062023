@@ -18,7 +18,7 @@ root.render(
         <Routes>
           <Route exact path="/" element={<Dashboard />}/>
           <Route path="/user/:id" element={<FetchUserData />}/>
-          {/* <Route exact path="/*" element={<Error />}/> */}
+          <Route exact path="/*" element={<Error />}/>
         </Routes>
     </Router>
   </React.StrictMode>
