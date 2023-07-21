@@ -1,0 +1,36 @@
+.activitiesTitle {
+	position: relative;
+	margin: 0;
+	top: 15px;
+	left: 15px;
+	font-size: 15px;
+	font-weight: 500;
+	z-index: 1;
+}
+
+.activitiesChart {
+	position: relative;
+	top: -15px;
+	height: 250px;
+	border-radius: 5px;
+	z-index: 0;
+}
+
+.activityTooltip {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: red;
+	width: 39px;
+	height: 63px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.activityTooltip p {
+	color: white;
+	opacity: 1;
+	font-size: 8px;
+	font-weight: 500;
+	text-align: center;
+}

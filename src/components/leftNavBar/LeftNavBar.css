@@ -1,0 +1,44 @@
+.leftNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 75px;
+  }
+  
+  .leftNavbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .sportsIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    background-color: white;
+    margin: 10px 0
+  }
+  
+  .sportsIcon img {
+    height: 25px;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 35px;
+    width: 90px;
+    font-size: 12px;
+    transform: rotate(-90deg);
+  }
