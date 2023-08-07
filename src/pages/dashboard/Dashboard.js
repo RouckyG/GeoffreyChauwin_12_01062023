@@ -15,27 +15,25 @@ const Dashboard = (props) => {
 
     const [userData, setUserData] = useState(props.userData);
 
-    return <main className="dashboard">
-        {userData !== undefined && <>
-            <div className="welcomeMessage">
-                <h1>Bonjour <span className="userName">{userData.main.userInfos.firstName}</span></h1>
-                <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
+    return userData && <main className="dashboard">
+        <div className="welcomeMessage">
+            <h1>Bonjour <span className="userName">{userData.main.userInfos.firstName}</span></h1>
+            <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
+        </div>
+        <div className="charts">
+            <div className="leftCharts">
+                <ActivityChart data={userData.activities}/>
+                <SessionChart data={userData.sessions}/>
+                <PerformanceChart data={userData.performance}/>
+                <ScoreChart value={userData.main.score}/>
             </div>
-            <div className="charts">
-                <div className="leftCharts">
-                    <ActivityChart data={userData.activities}/>
-                    <SessionChart data={userData.sessions}/>
-                    <PerformanceChart data={userData.performance}/>
-                    <ScoreChart value={userData.main.score}/>
-                </div>
-                <div className="mainData">
-                    <KeyData title="Calories" value={userData.main.keyData.calorieCount} icon={calorieIcon} color="#FF0000" />
-                    <KeyData title="Proteines" value={userData.main.keyData.proteinCount} icon={proteinIcon} color="#4AB8FF" />
-                    <KeyData title="Glucides" value={userData.main.keyData.carbohydrateCount} icon={carbohydrateIcon} color="#F9CE23" />
-                    <KeyData title="Lipides" value={userData.main.keyData.lipidCount} icon={lipidIcon} color="#FD5181" />
-                </div>
+            <div className="mainData">
+                <KeyData title="Calories" value={userData.main.keyData.calorieCount} icon={calorieIcon} color="#FF0000" />
+                <KeyData title="Proteines" value={userData.main.keyData.proteinCount} icon={proteinIcon} color="#4AB8FF" />
+                <KeyData title="Glucides" value={userData.main.keyData.carbohydrateCount} icon={carbohydrateIcon} color="#F9CE23" />
+                <KeyData title="Lipides" value={userData.main.keyData.lipidCount} icon={lipidIcon} color="#FD5181" />
             </div>
-        </>}
+        </div>
     </main>
 }
 
